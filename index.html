@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- nav -->
+    <div id="nav" class="nav">
+      <img class="nav__logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="" />
+      <img class="nav__avatar" src="images/netflix-avatar.png" alt="" />
+    </div>
+
+    <!-- header -->
+    <header class="banner">
+      <div class="banner__contents">
+        <h1 class="banner__title">Money Heist</h1>
+        <div class="banner__buttons">
+          <button class="banner__button">Play</button>
+          <button class="banner__button">My List</button>
+        </div>
+        <h1 class="banner__description">
+          To carry out the biggest heist in history, a mysterious man called The Professor recruits
+          a band of eight robbers who have a single characteristic
+        </h1>
+      </div>
+      <div class="banner--fadeBottom"></div>
+    </header>
+
+    <!-- Netflix Originals -->
+    <div class="row">
+      <h2>NETFLIX ORIGINALS</h2>
+      <div class="row__posters">
+        <img class="row__poster row__posterLarge" src="https://rukminim2.flixcart.com/image/850/1000/jr3t5e80/poster/a/w/f/medium-stranger-things-poster-for-room-office-13-inch-x-19-inch-original-imafcww8v99r4qhh.jpeg?q=20" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://m.media-amazon.com/images/M/MV5BNTkzMGQ4NTMtZGY2Ny00YjgyLTk2MGMtYjhkNDQ2OGRjMzczXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_FMjpg_UX1000_.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://m.media-amazon.com/images/I/61RpblzQMKL._AC_UF1000,1000_QL80_.jpg" alt="" />
+
+        <img class="row__poster row__posterLarge" src="https://m.media-amazon.com/images/M/MV5BNjJkYTI1MjAtNTcxZC00YmU5LWExMDAtZTg3YzRhMDNmYmEwXkEyXkFqcGdeQXVyMTEyMjM2NDc2._V1_FMjpg_UX1000_.jpg" alt="" />
+
+      </div>
+    </div>
+
+    <script>
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 100) {
+          nav.classList.add('nav__black');
+        } else {
+          nav.classList.remove('nav__black');
+        }
+      });
+    </script>
+  </body>
+</html>
